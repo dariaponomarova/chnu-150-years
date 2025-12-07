@@ -12,11 +12,7 @@ export default function Layout({ children }) {
     <div className="page">
       <header className="header">
         <div className="logo">
-          <span className="badge">150</span>
-          <div>
-            <p className="brand">ЧНУ ім. Ю. Федьковича</p>
-            <p className="tagline">років спадщини і розвитку</p>
-          </div>
+          <img src="/assets/logo.svg" alt="Логотип ЧНУ 150" width={230} height={60} />
         </div>
         <nav className="nav">
           {navLinks.map((link) => (
