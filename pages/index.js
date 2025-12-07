@@ -13,19 +13,25 @@ const highlights = [
     title: "Історія університету",
     text: "Як ЧНУ пройшов шлях від класичного університету до сучасного дослідницького центру.",
     href: "/history",
-    image: "https://placehold.co/330x360?text=History"
+    image: "/assets/home/highlight-1.png"
   },
   {
     title: "Кампус і архітектура",
     text: "Резиденція буковинських митрополитів, ботанічний сад та аудиторії, що надихають.",
     href: "/campus",
-    image: "https://placehold.co/330x360?text=Campus"
+    image: "/assets/home/highlight-2.png"
   },
   {
     title: "Люди й досягнення",
     text: "Викладачі, студенти та випускники, які творять репутацію ЧНУ на світовій арені.",
     href: "/people",
-    image: "https://placehold.co/330x360?text=Community"
+    image: "/assets/home/highlight-3.png"
+  },
+  {
+    title: "10 цікавинок",
+    text: "Коротка добірка історій і деталей про ЧНУ — від архітектурних родзинок до традицій, що народилися в стінах університету.",
+    href: "/facts",
+    image: "/assets/home/highlight-4.png"
   }
 ];
 
@@ -49,10 +55,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section class="highlights">
         <h2 className="section-title">Чим пишаємось</h2>
-        <p className="section-subtitle">Головні акценти ювілейного року: історія, простір і люди.</p>
-        <div className="grid">
+        <p className="section-subtitle">Головні акценти ювілейного року: історія, простір, люди і цікаві факти.</p>
+        <div className="highlights__grid">
           {highlights.map((item) => (
             <div key={item.title} className="card">
               <img src={item.image} alt={item.title} />
