@@ -154,7 +154,7 @@ a {
 .hero p {
   color: var(--muted);
   max-width: 640px;
-  margin: 0 0 18px;
+  margin: 0;
 }
 
 .hero-actions {
@@ -187,7 +187,7 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
   gap: 16px;
 }
 
