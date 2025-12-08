@@ -25,7 +25,7 @@ const milestones = [
   {
     year: "2010–2025",
     title: "Цифрова ера",
-    text: "Модернізація інфраструктури, розвиток ІТ-кампусів, впровадження відкритих онлайн-курсів і сервісів для студентів."
+    text: "Модернізація інфраструктури, розвиток ІТ-кампусів, впровадження відкритих онлайн-курсів і сервісів для студентів. Університет активно співпрацює з провідними навчальними закладами та науковими інституціями з-понад 36 країн світу. 2009 року заклад увійшов до EUA та приєднався до MCU. 2022 року став асоційованим членом UNITA. "
   }
 ];
 
@@ -261,7 +261,7 @@ export default function HistoryPage() {
       <section>
         <h2 className="section-title">Ключові етапи</h2>
         <p className="section-subtitle">Віхи, що визначили місію та цінності університету.</p>
-        <div className="grid">
+        <div className="milestones-grid">
           {milestones.map((item) => (
             <div key={item.year} className="card">
               <span className="pill">{item.year}</span>
