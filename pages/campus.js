@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import Layout from "../components/Layout";
 
 const spaces = [
@@ -43,19 +44,28 @@ export default function CampusPage() {
         </div>
       </section>
 
-      <section className="hero">
+      <section className="hero tours">
         <h2 className="section-title">Як дістатися</h2>
         <p className="section-subtitle">
           Основний корпус — вул. Коцюбинського, 2. Поруч — парк, бібліотека, студентські гуртожитки та медіацентр.
         </p>
-        <div className="grid">
+        <div className="tours__content">
           <div className="card">
             <span className="pill">Транспорт</span>
             <p>Громадський транспорт до зупинки «Держуніверситет». Для гостей — вхід через головну браму Резиденції.</p>
           </div>
           <div className="card">
             <span className="pill">Екскурсії</span>
-            <p>Щотижневі тури україномовні й англомовні; реєстрація відкрита онлайн упродовж ювілейного року.</p>
+            <p>Щоденні україномовні й англомовні; реєстрація відкрита онлайн.</p>
+            <a
+              className="link-arrow"
+              href="https://www.chnu.edu.ua/kultura/muzei/ekskursiine-obsluhovuvannia/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Дізнатися більше
+              <ArrowRight size={16} aria-hidden="true" />
+            </a>
           </div>
         </div>
       </section>

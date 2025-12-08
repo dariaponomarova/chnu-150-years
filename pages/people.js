@@ -42,7 +42,7 @@ export default function PeoplePage() {
 
       <section>
         <h2 className="section-title">Обличчя ЧНУ</h2>
-        <p className="section-subtitle">Ті, хто закладає фундамент наступних 150 років.</p>
+        <p className="section-subtitle">Ті, хто закладав фундамент цих 150 років.</p>
         <div className="grid">
           {people.map((person) => (
             <div key={person.name} className="card">

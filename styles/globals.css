@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: "Nunito", system-ui, -apple-system, sans-serif;
@@ -123,6 +127,12 @@ a {
   gap: 24px;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .hero {
   padding: 36px;
   border-radius: 22px;
@@ -130,10 +140,9 @@ a {
   background: linear-gradient(120deg, #fff7f5 0%, #f5f0ed 60%, #fff7f5 100%);
   position: relative;
   overflow: hidden;
-}
-
-.hero .pill {
-  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .hero::after {
@@ -146,7 +155,6 @@ a {
 }
 
 .hero h1 {
-  margin: 0 0 14px;
   font-size: 34px;
   letter-spacing: 0.4px;
 }
@@ -154,7 +162,6 @@ a {
 .hero p {
   color: var(--muted);
   max-width: 640px;
-  margin: 0;
 }
 
 .hero-actions {
@@ -233,6 +240,7 @@ a {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.4px;
+  max-width: max-content;
 }
 
 .card h3 {
@@ -243,6 +251,19 @@ a {
 .card p {
   margin: 0;
   color: var(--muted);
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.link-arrow:hover {
+  color: var(--accent);
 }
 
 .card img {
@@ -275,12 +296,10 @@ a {
 }
 
 .section-title {
-  margin: 0 0 6px;
   font-size: 22px;
 }
 
 .section-subtitle {
-  margin: 0 0 12px;
   color: var(--muted);
 }
 
@@ -297,7 +316,7 @@ a {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
+  gap: 24px;
 }
 
 .gallery-card {
@@ -430,13 +449,37 @@ a {
 .highlights .highlights__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 24px;
 }
 
 .highlights img {
   height: 330px;
   object-fit: cover;
   object-position: center;
+}
+
+.author-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.author-info .card.photo {
+  align-self: start;
+}
+
+.author-info .card.photo img {
+  width: 100%;
+  max-height: 330px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tours__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 @media (max-width: 720px) {
@@ -502,7 +545,12 @@ a {
 
   .highlights .highlights__grid {
     grid-template-columns: repeat(1, 1fr);
-    gap: 32px;
+    gap: 24px;
+  }
+
+  .tours__content {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -514,6 +562,9 @@ a {
 
   .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
+  }
+
+  .author-info {
+    grid-template-columns: 1fr;
   }
 }
