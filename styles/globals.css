@@ -56,6 +56,10 @@ a {
   top: 0;
 }
 
+.header a {
+  display: flex;
+}
+
 .logo {
   display: flex;
   gap: 12px;
@@ -482,7 +486,7 @@ section {
   gap: 24px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 880px) {
   .header {
     flex-direction: row;
     gap: 10px;

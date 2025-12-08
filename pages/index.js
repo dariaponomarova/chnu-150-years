@@ -58,7 +58,7 @@ export default function Home() {
 
       <section class="highlights">
         <h2 className="section-title">Чим пишаємось</h2>
-        <p className="section-subtitle">Головні акценти ювілейного року: історія, простір, люди і цікаві факти.</p>
+        <p className="section-subtitle">Акценти ювілейного року: історія, простір, люди і цікаві факти.</p>
         <div className="highlights__grid">
           {highlights.map((item) => (
             <div key={item.title} className="card">

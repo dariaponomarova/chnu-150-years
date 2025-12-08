@@ -20,7 +20,7 @@ export default function Layout({ children }) {
     <div className="page">
       <header className="header">
         <a href="/">
-          <img src="/assets/logo.svg" alt="Логотип ЧНУ 150" width={230} height={60} />
+          <img src="/assets/logo.svg" alt="Логотип ЧНУ 150" width={200} height={50} />
         </a>
         <button
           className="burger"
