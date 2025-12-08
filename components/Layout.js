@@ -40,7 +40,6 @@ export default function Layout({ children }) {
       </header>
       <main className="content">{children}</main>
       <footer className="footer">
-        <p>1875–2025: Чернівецький національний університет. Разом творимо наступні 150 років.</p>
         <p>© Дар'я Пономарьова. Всі права захищено. 2025</p>
       </footer>
     </div>

@@ -215,6 +215,12 @@ a {
   position: relative;
 }
 
+.card.campus img {
+  max-height: 230px;
+  width: auto;
+  object-fit: cover;
+}
+
 .pill {
   display: inline-flex;
   align-items: center;
