@@ -696,7 +696,8 @@ section {
     justify-content: flex-start;
   }
 
-  .pie-legend, .people-grid {
+  .pie-legend, .people-grid, .grid, .author-info {
+    display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
@@ -711,7 +712,8 @@ section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .author-info, .people-grid {
+  .author-info, .people-grid, .grid {
+    display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   } 
 }
