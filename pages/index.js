@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section class="highlights">
+      <section className="highlights">
         <h2 className="section-title">Чим пишаємось</h2>
         <p className="section-subtitle">Акценти ювілейного року: історія, простір, люди і цікаві факти.</p>
         <div className="highlights__grid">
